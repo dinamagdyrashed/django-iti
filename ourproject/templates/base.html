@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,9 @@
 <body>
     <table width="100%">
         <tr>
-            <td>Header</td>
+            <td><a href="{%url 'alltracks'%}">Tracks</a>
+                <a href="{%url 'alltrainee'%}">Trainees</a>
+            </td>
         </tr>
         <tr>
             <td>{% block content %}
